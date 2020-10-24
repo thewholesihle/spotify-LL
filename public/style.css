@@ -1,0 +1,111 @@
+/* I'm rusty here*/
+/*Hope You liked it!*/
+
+/* background*/
+html
+{
+background-color:black;
+}
+
+/* Trying to auto resize image*/
+img
+{
+    padding-top: 20px;
+    width:auto;
+    height:30px;
+}
+
+/* slogan,I could not use the original spotify font*/
+.slogan
+{
+    font-family: monospace;
+    padding-top: 12px;
+    color: white;
+    font-style: bold;
+}
+
+/* Buttons!*/
+button
+{
+    width: 200px;
+    height: 30px;
+    outline:none;
+}
+
+/* The sign up Button*/
+.signupButton
+{
+    font-family: monospace;
+    border-radius: 20px;
+    margin-top: 12px;
+    border-style: none;
+    font-weight:bolder;
+    color: white;
+    background-color: limegreen;
+}
+
+/* When hovered*/
+.signupButton:hover
+{
+ cursor: pointer;
+ background-color: black;
+ color:white;
+ border: 1px solid limegreen;
+ border-bottom: 2px solid limegreen;
+ border-style: thin;
+}
+
+/*Those two small lines */
+hr
+{
+    margin-top: 10px; ;
+}
+
+/* The paragraph*/
+p
+{    
+    font-family:monospace;
+    color: white;
+}
+
+/* The login Button*/
+.loginButton
+{
+    border-radius: 20px;
+    margin-top: 12px;
+    font-family: monospace;
+    border-style: none;
+    font-weight:bolder;
+}
+
+/* When login button is hovered */
+.loginButton:hover
+{
+ 
+ background-color: black;
+ color:white;
+ border: 1px solid white;
+ border-bottom: 2px solid white;
+ border-style: thin;
+ cursor: pointer;
+}
+
+/* The settings button down there*/
+.settings
+{
+    border-radius: 20px;
+    border-style: none;
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    font-weight: bolder;
+    margin-top: 13.4%;
+}
+
+.settings:hover
+{
+    background-color: white;
+    color:black;
+    /* If using PC cusor is changed on hover*/
+    cursor: pointer;
+}

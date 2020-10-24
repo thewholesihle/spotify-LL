@@ -1,0 +1,98 @@
+<!--
+    By:Trinity
+    Date:16.Nov.2019
+    What:Spotify Login Page
+    Comment:Hope You liked it!
+-->
+<html>
+
+<head>
+
+<meta meta name="viewport" content="width=device-width, user-scalable=no" /> 
+
+    <title>My Spotify Login Page</title>
+    
+<!--The JS Library-->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.3.11/dist/sweetalert2.all.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  
+  <!--CSS links-->
+  <link rel="stylesheet" href="style.css" >
+  </head>
+
+    <body>
+        
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCPf9Ggbp9v5-WbiBdrsNOsc5inAPgXYgc",
+    authDomain: "spotify-ui.firebaseapp.com",
+    databaseURL: "https://spotify-ui.firebaseio.com",
+    projectId: "spotify-ui",
+    storageBucket: "spotify-ui.appspot.com",
+    messagingSenderId: "628746477582",
+    appId: "1:628746477582:web:becf515ca223fd42831c5f",
+    measurementId: "G-KH3882B8D9"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+
+        <div align="center">
+            <!--The Spotify Icon-->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Antu_spotify.svg/768px-Antu_spotify.svg.png" 
+        title = "Spotify&copy">    
+        
+        <!--I dont know if its a slogan or not-->
+        <h2 class="slogan">
+            Play any song, anytime, free.
+        </h2>
+<!--The Signup button with tool tip (for PC) and alert onclick-->
+        <button class="signupButton" onclick ="signupAlert();"title="sign up for free">
+            SIGN UP FREE
+        </button>
+        <br>
+        <br>
+    </div>
+
+<hr width="10px">
+
+<!--Already have an account?-->
+<div align="center">
+
+    <p>ALREADY HAVE AN ACCOUNT?</p>
+
+    <hr width="10px">
+
+<!--The Login button with tool tip and alert onclick-->        
+</div>
+        
+        <div align="center">
+                <button class="loginButton" title="login with your existing spotify account" onclick ="loginAlert();">
+            LOG IN
+        </button>
+    </div>
+
+        <br>
+
+        <div align="center">
+        <!--Settings Button with tooltip-->
+        <button class="settings" title="change settings">
+            S E T T I N G S
+        </button>
+        <br>
+        <br>
+		<p>this code is <b>not</b> <br>affiliated with spotify</p>
+        </div>
+  </body>
+
+</html>
